@@ -1,8 +1,8 @@
 import React from 'react';
 import {    HiArrowPath, 
             HiOutlineHeart, 
-            HiOutlineUser, 
             HiOutlineShoppingCart  } from "react-icons/hi2";
+import UserDropdown from './UserDropdown';
 
 export default function UserNavigationMenu() {
     return (
@@ -11,9 +11,7 @@ export default function UserNavigationMenu() {
             <a href="/wishlist" className="header__userlink ml-2"><HiOutlineHeart className="w-6 text-[1.5rem] text-white" /></a>
 
             {/* Dropdown component for the user login/logout here: */}
-            <div className="header-userdrop-cont flex items-center">
-                <button className="header__userbtn ml-2"><HiOutlineUser className="w-6 text-[1.5rem] text-white" /></button>
-            </div>
+            <UserDropdown /> 
 
             {/* Shopping cart component goes here: */}
             <div className="header-cart-cont flex items-center">

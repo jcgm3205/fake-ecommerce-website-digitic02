@@ -8,7 +8,7 @@ export default function BurgerButton() {
 
     return (
         <button className="header__burgerbtn mr-[0.625rem]"
-                onClick={lib.toggleNavMenu} >
+                onClick={ () => { lib.toggleClass("navMenu", "visible") } } >
             <HiBars3 className="w-9 text-white text-4xl" />
         </button>        
     );

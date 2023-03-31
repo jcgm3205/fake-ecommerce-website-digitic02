@@ -3,6 +3,9 @@ export function miniLibrary() {
         document.getElementById("navMenu").classList.toggle("visible");
     }
 
+    function toggleClass(element, cssClass) {
+        document.getElementById(element).classList.toggle(cssClass);
+    }
 
-    return { toggleNavMenu };
+    return { toggleNavMenu, toggleClass };
 }
