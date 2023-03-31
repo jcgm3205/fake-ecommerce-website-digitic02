@@ -18,7 +18,7 @@ export default function SiteNavMenu() {
                 id='navMenu' >
             <div className="header-btn-cont pr-5 flex justify-end">
                 <button className='header__xmarkbtn'
-                        onClick={ lib.toggleNavMenu }>
+                        onClick={ () => { lib.toggleClass("navMenu", "visible") } }>
                     <HiOutlineXMark className='text-white text-2xl'/>
                 </button>
             </div>

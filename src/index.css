@@ -29,3 +29,15 @@
 .socialicon{
   @apply text-[1.5rem] text-white hover:text-primary-yellow;
 }
+
+.header-dropdown{
+  @apply w-52 h-24 px-4 bg-white rounded-md absolute top-[50px] right-0 z-10 translate-y-[-1rem] invisible opacity-0 transition-all duration-500 ease-in-out;
+}
+
+.header__down-link{
+  @apply border-b border-solid border-b-primary-grey py-3 block;
+}
+
+.show{
+  @apply visible opacity-100 translate-y-0;
+}
