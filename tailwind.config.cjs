@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        "mainstrip-he": "var(--mainstrip-he)",
+      },
       colors: {
         "main-bg-clr": "#131921",
         "sec-bg-clr": "#232f3e",
@@ -13,6 +16,13 @@ module.exports = {
         "primary-yellow": "#febd69",
         "primary-grey": "#3b4149",
       },
+    },
+    screens: {
+      "sm": "576px",
+      "md": "768px",
+      "lg": "992px",
+      "xl": "1200px",
+      "xxl": "1400px",
     },
   },
   plugins: [],

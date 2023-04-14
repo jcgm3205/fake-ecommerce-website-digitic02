@@ -3,7 +3,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 
 export default function GlobalSearch() {
     return (
-        <form   className="header-searchbar-cont h-[2.25rem] flex items-center rounded-[5px] overflow-hidden"
+        <form   className="header-searchbar-cont h-[2.25rem] flex items-center rounded-[5px] overflow-hidden lg:absolute lg:top-[length:var(--specialtop)] lg:left-1/2 lg:translate-x-[-50%]"
                 action="/search" >
             <input  type="text" 
                     name="q" 
