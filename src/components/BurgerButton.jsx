@@ -7,7 +7,7 @@ export default function BurgerButton() {
     const lib = miniLibrary();
 
     return (
-        <button className="header__burgerbtn mr-[0.625rem]"
+        <button className="header__burgerbtn mr-[0.625rem] lg:hidden"
                 onClick={ () => { lib.toggleClass("navMenu", "visible") } } >
             <HiBars3 className="w-9 text-white text-4xl" />
         </button>        

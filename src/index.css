@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+:root{
+  --mainstrip-he: 74px;
+  --specialtop: -54px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +16,7 @@
 }
 
 .header-sitenavmenu{
-  @apply w-[19rem] pt-5 pb-6 bg-main-bg-clr absolute top-[-70px] left-0 translate-x-[-100%] transition duration-500 ease-in-out;
+  @apply w-[19rem] pt-5 pb-6 bg-main-bg-clr absolute top-[-70px] left-0 translate-x-[-100%] transition duration-500 ease-in-out lg:w-auto lg:p-0 lg:bg-transparent lg:static lg:translate-x-0 lg:flex lg:items-center;
 }
 
 .visible{
@@ -19,7 +24,7 @@
 }
 
 .header__link{
-  @apply pt-4 pr-5 pb-4 pl-6 border-b border-solid border-b-primary-grey text-[1.125rem] text-white block hover:text-primary-yellow;  
+  @apply pt-4 pr-5 pb-4 pl-6 border-b border-solid border-b-primary-grey text-[1.125rem] text-white block hover:text-primary-yellow lg:p-0 lg:border-none lg:uppercase lg:inline-block lg:hover:text-white;  
 }
 
 .header__sociallink{
@@ -40,4 +45,8 @@
 
 .show{
   @apply visible opacity-100 translate-y-0;
+}
+
+.main-container{
+  @apply min-h-[75vh] bg-gray-200
 }
